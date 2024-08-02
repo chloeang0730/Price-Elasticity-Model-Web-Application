@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/UL.css">
+    <title>Title</title>
+</head>
+<body>
+    <section class="section-with-blue-background">
+        <div class="header-title">Upload File</div>
+    </section>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="IMG file/logo.PNG" alt="Logo">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="LI.html">Log In</a></li>
+                <li><a href="UL.html">Upload File</a></li>
+                <li><a href="DB.html">Dashboard</a></li>
+                <li><a href="PC.html">Product Comparison</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="file-upload-container">
+        <div class="select-file-container">
+            <input type="file" id="filename" accept=".csv" style="display: none;">
+            <label for="filename" class="rectangle-s" id="selectFileButton">
+                Select File
+            </label>
+            <span id="selectedFileName"></span>
+        </div>
+        <div class="upload-button-container">
+            <button type="button" id="uploadButton">Upload</button>
+        </div>
+    </div>
+    <button id="selectFileButton" class="rectangle-s">Select File</button>
+
+    <div class="rectangle-container">
+        <div class="rectangle"></div>
+        <div class="rectangle-b"></div>
+    </div>
+    <div class="dp-title">Drop a file ↓</div>
+    <div class="or">or</div>
+    <div id="selectedFileName"></div>
+
+    <script src="JS file/UL.js"></script>
+</body>
+</html>
+

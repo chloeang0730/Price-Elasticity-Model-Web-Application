@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Comparison</title>
+    <link rel="stylesheet" type="text/css" href="CSS/PC.css">
+</head>
+<body>
+    <section class="section-with-blue-background">
+        <div class="header-title">Product Comparison</div>
+    </section>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="IMG file/logo.PNG" alt="Logo">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="LI.html">Log In</a></li>
+                <li><a href="UL.html">Upload File</a></li>
+                <li><a href="DB.html">Dashboard</a></li>
+                <li><a href="PC.html">Product Comparison</a></li>
+            </ul>
+        </nav>
+    </div>
+    <style>
+      /* Add your CSS styles here */
+      #tableContainer {
+          margin-left: 12%; /* Adjust the left margin to slide the table to the left */
+          margin-top: 10%;
+      }
+      
+      table {
+          border-collapse: collapse;
+          width: 100%;
+      }
+      
+      th, td {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+      }
+      
+      th {
+          background-color: #f2f2f2;
+      }
+    </style>
+    </head>
+    <body>
+    <div id="tableContainer">
+      <table id="dataTable">
+          <!-- Table headers will be added dynamically -->
+          <thead>
+              <tr>
+                  <!-- Table headers will be added dynamically -->
+              </tr>
+          </thead>
+          <tbody>
+              <!-- Table rows will be added dynamically -->
+          </tbody>
+      </table>
+    </div>
+
+    <!-- Popup -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <h2>Select Fields</h2>
+      <!-- Dropdown container -->
+      <div id="dropdownContainer"></div>
+      <!-- Add and remove dropdown buttons -->
+      <button onclick="addDropdown()">Add Dropdown</button>
+      <button onclick="removeDropdown()">Remove Dropdown</button>
+      <button onclick="submitSelection()">Submit</button>
+  </div>
+</div>
+    <script src="JS file/PC.js"></script>
+</body>
+</html>
+
